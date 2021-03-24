@@ -20,7 +20,7 @@ spec:
         limits:
           cpu: "0.1"
     - name: sentinel
-      image: behroozam/redis:k8s
+      image: aemr3/redis-k8s
       env:
         - name: SENTINEL
           value: "true"
