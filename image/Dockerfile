@@ -16,9 +16,9 @@ FROM alpine:3.8
 
 RUN apk add --no-cache redis sed bash
 
-COPY redis-master.conf /redis-master/redis.conf
-COPY redis-slave.conf /redis-slave/redis.conf
-COPY run.sh /run.sh
+COPY image/redis-master.conf /redis-master/redis.conf
+COPY image/redis-slave.conf /redis-slave/redis.conf
+COPY image/run.sh /run.sh
 
 CMD [ "/run.sh" ]
 
