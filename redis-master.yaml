@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
     - name: master
-      image: behroozam/redis:k8s
+      image: aemr3/redis-k8s
       imagePullPolicy: Always
       env:
         - name: MASTER
